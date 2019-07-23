@@ -1,0 +1,14 @@
+{
+  "name": "global-store-hook",
+  "version": "1.0.1",
+  "description": "Global store using state hook and context hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Udara Bibile",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6"
+  }
+}
