@@ -28,13 +28,10 @@ const globalStore = (init) => {
 
 const AppContext = React.createContext({});
 
-const GlobalStoreProvider = ({ initValues, children }) => (
+export const GlobalStoreProvider = ({ initValues, children }) => (
     <AppContext.Provider value={globalStore(initValues)}>
         {children}
     </AppContext.Provider>
 )
 
-const GlobalStore = () => useContext(AppContext);
-
-exports.GlobalStoreProvider = GlobalStoreProvider;
-exports.GlobalStore = GlobalStore;
+export const GlobalStore = () => useContext(AppContext);
