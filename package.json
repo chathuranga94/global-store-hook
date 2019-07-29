@@ -1,14 +1,21 @@
 {
   "name": "global-store-hook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Global store using state hook and context hook",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "babel ./src --out-dir ./dist -s inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Udara Bibile",
   "license": "ISC",
   "dependencies": {
     "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
   }
 }
